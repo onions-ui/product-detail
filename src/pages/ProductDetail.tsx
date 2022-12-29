@@ -9,13 +9,14 @@ import {
   CartIcon,
   DotsHorizontalIcon,
 } from "../components/_shares/icons";
-import { useProduct } from "../hooks";
+import { usePolicies, useProduct } from "../hooks";
 
 export const ProductDetail: React.FC = () => {
   const { product } = useProduct();
+  const { policies } = usePolicies();
   return (
     <Layout>
-      <DetailProduct product={product} />
+      <DetailProduct product={product} policies={policies} />
       <SameBrandProduct brandId="brandId" products={product.sameBrands || []} />
     </Layout>
   );

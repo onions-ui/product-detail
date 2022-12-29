@@ -163,5 +163,4 @@ const mockData: Product = {
       totalAvailable: 1,
     },
   ],
-  salePolices: [],
 };

@@ -8,12 +8,17 @@ import { ProductPrice } from "../ProductPrice/ProductPrice";
 import { ProductShipping } from "./ProductShipping";
 import { ProductShortDescription } from "./ProductShortDescription";
 import { ProductVariants } from "./ProductVariants";
+import { Policies } from "../SellPolicy/Policies";
 
 export interface DetailProductProps {
   product: Product;
+  policies?: Array<{ label: string; imageUrl?: string }>;
 }
 
-export const DetailProduct: React.FC<DetailProductProps> = ({ product }) => {
+export const DetailProduct: React.FC<DetailProductProps> = ({
+  product,
+  policies,
+}) => {
   const { price, provider } = product;
   return (
     <div>
@@ -37,6 +42,7 @@ export const DetailProduct: React.FC<DetailProductProps> = ({ product }) => {
         {provider && (
           <ProductProvider name={provider?.name} avatar={provider?.avatar} />
         )}
+        <Policies policies={policies || []} />
       </StyledProvider>
 
       <StyledContainer>
@@ -52,7 +58,6 @@ export const DetailProduct: React.FC<DetailProductProps> = ({ product }) => {
           description={product.description || ""}
         />
       </StyledContainer>
-      {/* InfoProduct */}
     </div>
   );
 };

@@ -12,9 +12,9 @@ export const ArrowRightIcon: React.FC<BaseIconProps> = ({ ...props }) => {
       <path
         d="M8.49976 19.0001L15.4998 12.0001L8.49976 5.00012"
         stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
     </BaseIcon>
   );

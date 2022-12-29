@@ -29,12 +29,8 @@ export const SameBrandProduct: React.FC<SameBrandProductProps> = ({
       </SectionHeader>
       <ProductList wrap="nowrap" gap="s8">
         {products.map((product) => (
-          <ProductItem>
-            <ProductCard
-              key={product.id}
-              product={product}
-              onAddToCart={console.log}
-            />
+          <ProductItem key={product.id}>
+            <ProductCard product={product} onAddToCart={console.log} />
           </ProductItem>
         ))}
       </ProductList>

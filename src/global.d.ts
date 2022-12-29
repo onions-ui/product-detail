@@ -94,10 +94,6 @@ interface Product {
   description?: string;
   sameBrands?: SameBrandProduct[];
   totalAvailable?: number;
-  salePolices: Array<{
-    label: string;
-    imageUrl?: string;
-  }>;
 }
 
 type SameBrandProduct = Pick<

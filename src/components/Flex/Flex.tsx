@@ -24,8 +24,8 @@ export const Flex = styled.div<FlexProps>`
   justify-content: ${(props) => props.justify || "flex-start"};
   align-items: ${(props) => props.align || "stretch"};
   gap: ${({ gap, theme }) => theme.spacing[gap || "s0"]};
-  column-gap: ${({ gapX, theme }) => theme.spacing[gapX || "s0"]};
-  row-gap: ${({ gapY, theme }) => theme.spacing[gapY || "s0"]};
+  column-gap: ${({ gapX, theme, gap }) => theme.spacing[gapX || gap || "s0"]};
+  row-gap: ${({ gapY, theme, gap }) => theme.spacing[gapY || gap || "s0"]};
 `;
 
 Flex.displayName = "Flex";
@@ -35,7 +35,4 @@ Flex.defaultProps = {
   direction: "row",
   justify: "flex-start",
   align: "stretch",
-  gap: "s0",
-  gapX: "s0",
-  gapY: "s0",
 };
