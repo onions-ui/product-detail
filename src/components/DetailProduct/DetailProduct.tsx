@@ -4,7 +4,7 @@ import { ProductProvider } from "../ProductProvider";
 import { InfoProduct } from "./InfoProduct";
 import { ProductDescription } from "./ProductDescription";
 import { ProductImages } from "./ProductImages";
-import { ProductPrice } from "./ProductPrice";
+import { ProductPrice } from "../ProductPrice/ProductPrice";
 import { ProductShipping } from "./ProductShipping";
 import { ProductShortDescription } from "./ProductShortDescription";
 import { ProductVariants } from "./ProductVariants";

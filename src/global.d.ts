@@ -10,6 +10,8 @@ interface ThemeConfig {
     muted?: string;
 
     success?: string;
+
+    gray?: string;
   };
   spacing: {
     s0: string;
@@ -100,5 +102,5 @@ interface Product {
 
 type SameBrandProduct = Pick<
   Product,
-  "id" | "name" | "price" | "sku" | "brand" | "totalAvaialble" | "freeShipping"
->;
+  "id" | "name" | "price" | "sku" | "brand" | "totalAvailable" | "freeShipping"
+> & { imageUrl?: string };

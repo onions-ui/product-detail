@@ -3,6 +3,7 @@ import React, { ReactNode } from "react";
 import { ActionBar, Button } from "../components";
 import { DetailProduct } from "../components/DetailProduct";
 import { Flex } from "../components/Flex";
+import { SameBrandProduct } from "../components/SameBrandProducts/SameBrandProduct";
 import {
   ArrowLeftIcon,
   CartIcon,
@@ -15,6 +16,7 @@ export const ProductDetail: React.FC = () => {
   return (
     <Layout>
       <DetailProduct product={product} />
+      <SameBrandProduct brandId="brandId" products={product.sameBrands || []} />
     </Layout>
   );
 };
@@ -51,11 +53,11 @@ const Layout: React.FC<{ children: ReactNode }> = ({ children }) => {
 
 const StyledLayout = styled.div`
   height: 100vh;
-  background-color: #f5f3f3;
 `;
 const StyledContent = styled.div`
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+  background-color: #f5f3f3;
 `;
 
 const StyledTopBar = styled.div`

@@ -32,7 +32,7 @@ export const InfoProduct: React.FC<InfoProductProps> = ({
 };
 
 const AttributeWrapper = styled.div<{ gray?: boolean }>(({ gray, theme }) => ({
-  ...(gray && { backgroundColor: theme.colors.secondary }),
+  ...(gray && { backgroundColor: theme.colors.gray }),
   display: "flex",
   flexWrap: "nowrap",
   padding: "0.75rem 1rem",

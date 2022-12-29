@@ -3,12 +3,13 @@ import { Theme } from "@emotion/react";
 export const theme: Theme = {
   colors: {
     primary: "#1435c3",
-    secondary: "#f6f6f6",
+    secondary: "#e6983a",
     textSecondary: "#848788",
     border: "#e0e0e0",
     textPrimary: "#333333",
     muted: "#82869e",
     success: "#53c305",
+    gray: "#f6f6f6",
   },
   spacing: {
     s0: "0",

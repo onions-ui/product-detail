@@ -30,7 +30,7 @@ const ImageIndex = styled.div`
   top: 10px;
   right: 10px;
   border-radius: 5px;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: #f6f6f6;
   color: ${({ theme }) => theme.colors.textSecondary};
   padding: 6px 12px;
   border-radius: 1rem;
